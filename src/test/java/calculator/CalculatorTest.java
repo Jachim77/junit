@@ -86,14 +86,12 @@ public class CalculatorTest {
     }
 
     @Test
-    @Disabled
     public void squareRoot_rootOfNegativeNumber_throwsArithmeticException() {
         int a = -15;
         Assertions.assertThrows(ArithmeticException.class, () -> calculator.squareRoot(a));
     }
 
     @Test
-    @Disabled
     public void squareRoot_rootOfPositiveNumber_returnDouble() {
         int a = 15;
         double expectedResult = 3.872983346207417;
